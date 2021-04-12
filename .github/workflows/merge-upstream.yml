@@ -1,35 +1,3 @@
-Skip to content
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@wdcew 
-KFERMercer
-/
-OpenWrt-CI
-25
-9135.2k
-Code
-Issues
-11
-Pull requests
-3
-Actions
-Projects
-Wiki
-Security
-Insights
-OpenWrt-CI/merge-upstream.yml
-@KFERMercer
-KFERMercer CI: up to new version
-Latest commit 02cb0f4 on 1 Sep 2020
- History
- 1 contributor
-55 lines (44 sloc)  1.21 KB
-  
 #
 # This is free software, lisence use MIT.
 # 
@@ -83,16 +51,3 @@ jobs:
       env:
         DOWNSTREAM_BRANCH: master
       run: git push origin $DOWNSTREAM_BRANCH
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-Loading complete
