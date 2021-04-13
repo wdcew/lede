@@ -722,10 +722,6 @@ jobs:
           CONFIG_PACKAGE_kmod-fs-exportfs=y
           CONFIG_PACKAGE_kmod-fs-ext4=y
           CONFIG_PACKAGE_kmod-fs-f2fs=y
-          CONFIG_PACKAGE_kmod-fs-nfs-common=y
-          CONFIG_PACKAGE_kmod-fs-nfs-common-rpcsec=y
-          CONFIG_PACKAGE_kmod-fs-nfsd=y
-          CONFIG_PACKAGE_kmod-fs-ntfs=y
           CONFIG_PACKAGE_kmod-fs-vfat=y
           CONFIG_PACKAGE_kmod-hwmon-core=y
           CONFIG_PACKAGE_kmod-i2c-algo-bit=y
@@ -1125,7 +1121,7 @@ jobs:
           CONFIG_PACKAGE_openssl-util=y
           CONFIG_PACKAGE_shellsync=y
           CONFIG_STRACE_NONE=y
-
+          
           EOF
           #
           # ===============================================================
