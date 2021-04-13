@@ -674,8 +674,6 @@ jobs:
           CONFIG_ZABBIX_NOSSL=y
           CONFIG_ZABBIX_POSTGRESQL=y
           CONFIG_PACKAGE_htop=y
-          CONFIG_PACKAGE_netdata=y
-          CONFIG_PACKAGE_syslog-ng=y
           CONFIG_PACKAGE_grub2=y
           CONFIG_PACKAGE_grub2-efi=y
           CONFIG_PACKAGE_diffutils=y
@@ -722,6 +720,10 @@ jobs:
           CONFIG_PACKAGE_kmod-fs-exportfs=y
           CONFIG_PACKAGE_kmod-fs-ext4=y
           CONFIG_PACKAGE_kmod-fs-f2fs=y
+          CONFIG_PACKAGE_kmod-fs-nfs-common=y
+          CONFIG_PACKAGE_kmod-fs-nfs-common-rpcsec=y
+          CONFIG_PACKAGE_kmod-fs-nfsd=y
+          CONFIG_PACKAGE_kmod-fs-ntfs=y
           CONFIG_PACKAGE_kmod-fs-vfat=y
           CONFIG_PACKAGE_kmod-hwmon-core=y
           CONFIG_PACKAGE_kmod-i2c-algo-bit=y
