@@ -223,8 +223,8 @@ jobs:
           CONFIG_GRUB_TIMEOUT="0"
           CONFIG_GRUB_TITLE="OpenWrt"
           CONFIG_VMDK_IMAGES=y
-          CONFIG_TARGET_KERNEL_PARTSIZE=16
-          CONFIG_TARGET_ROOTFS_PARTSIZE=160
+          CONFIG_TARGET_KERNEL_PARTSIZE=320
+          CONFIG_TARGET_ROOTFS_PARTSIZE=520
           CONFIG_TARGET_ROOTFS_PARTNAME=""
           CONFIG_SIGNED_PACKAGES=y
           CONFIG_SIGNATURE_CHECK=y
@@ -674,8 +674,11 @@ jobs:
           CONFIG_ZABBIX_NOSSL=y
           CONFIG_ZABBIX_POSTGRESQL=y
           CONFIG_PACKAGE_htop=y
+          CONFIG_PACKAGE_netdata=y
+          CONFIG_PACKAGE_syslog-ng=y
           CONFIG_PACKAGE_grub2=y
           CONFIG_PACKAGE_grub2-efi=y
+          CONFIG_PACKAGE_diffutils=y
           CONFIG_PACKAGE_autocore-x86=y
           CONFIG_PACKAGE_automount=y
           CONFIG_PACKAGE_autosamba=y
@@ -700,6 +703,7 @@ jobs:
           CONFIG_PACKAGE_kmod-crypto-cbc=y
           CONFIG_PACKAGE_kmod-crypto-crc32=y
           CONFIG_PACKAGE_kmod-crypto-crc32c=y
+          CONFIG_PACKAGE_kmod-crypto-cts=y
           CONFIG_PACKAGE_kmod-crypto-deflate=y
           CONFIG_PACKAGE_kmod-crypto-des=y
           CONFIG_PACKAGE_kmod-crypto-ecb=y
@@ -715,8 +719,13 @@ jobs:
           CONFIG_PACKAGE_kmod-cryptodev=y
           CONFIG_PACKAGE_kmod-fs-antfs=y
           CONFIG_PACKAGE_kmod-fs-exfat=y
+          CONFIG_PACKAGE_kmod-fs-exportfs=y
           CONFIG_PACKAGE_kmod-fs-ext4=y
           CONFIG_PACKAGE_kmod-fs-f2fs=y
+          CONFIG_PACKAGE_kmod-fs-nfs-common=y
+          CONFIG_PACKAGE_kmod-fs-nfs-common-rpcsec=y
+          CONFIG_PACKAGE_kmod-fs-nfsd=y
+          CONFIG_PACKAGE_kmod-fs-ntfs=y
           CONFIG_PACKAGE_kmod-fs-vfat=y
           CONFIG_PACKAGE_kmod-hwmon-core=y
           CONFIG_PACKAGE_kmod-i2c-algo-bit=y
@@ -798,7 +807,6 @@ jobs:
           CONFIG_PACKAGE_kmod-slhc=y
           CONFIG_PACKAGE_kmod-tcp-bbr=y
           CONFIG_PACKAGE_kmod-tun=y
-          CONFIG_PACKAGE_kmod-dma-buf=y
           CONFIG_PACKAGE_kmod-mmc=y
           CONFIG_PACKAGE_kmod-pps=y
           CONFIG_PACKAGE_kmod-ptp=y
@@ -814,17 +822,6 @@ jobs:
           CONFIG_PACKAGE_kmod-usb-storage=y
           CONFIG_PACKAGE_kmod-usb-storage-extras=y
           CONFIG_PACKAGE_kmod-usb-storage-uas=y
-          CONFIG_PACKAGE_kmod-backlight=y
-          CONFIG_PACKAGE_kmod-drm=y
-          CONFIG_PACKAGE_kmod-drm-amdgpu=y
-          CONFIG_PACKAGE_kmod-drm-kms-helper=y
-          CONFIG_PACKAGE_kmod-drm-ttm=y
-          CONFIG_PACKAGE_kmod-fb=y
-          CONFIG_PACKAGE_kmod-fb-cfb-copyarea=y
-          CONFIG_PACKAGE_kmod-fb-cfb-fillrect=y
-          CONFIG_PACKAGE_kmod-fb-cfb-imgblt=y
-          CONFIG_PACKAGE_kmod-fb-sys-fops=y
-          CONFIG_PACKAGE_kmod-fb-sys-ram=y
           CONFIG_PACKAGE_golang=y
           CONFIG_GOLANG_EXTERNAL_BOOTSTRAP_ROOT=""
           CONFIG_GOLANG_BUILD_CACHE_DIR=""
@@ -866,6 +863,7 @@ jobs:
           CONFIG_SQLITE3_FTS5=y
           CONFIG_SQLITE3_JSON1=y
           CONFIG_SQLITE3_RTREE=y
+          CONFIG_PACKAGE_libattr=y
           CONFIG_PACKAGE_libsysfs=y
           CONFIG_PACKAGE_libip4tc=y
           CONFIG_PACKAGE_libip6tc=y
@@ -888,6 +886,7 @@ jobs:
           CONFIG_OPENSSL_ENGINE_BUILTIN_AFALG=y
           CONFIG_OPENSSL_ENGINE_BUILTIN_DEVCRYPTO=y
           CONFIG_PACKAGE_libopenssl-conf=y
+          CONFIG_PACKAGE_glib2=y
           CONFIG_PACKAGE_libblkid=y
           CONFIG_PACKAGE_libblobmsg-json=y
           CONFIG_PACKAGE_libcares=y
@@ -901,6 +900,7 @@ jobs:
           CONFIG_LIBCURL_NO_SMB="!"
           CONFIG_LIBCURL_PROXY=y
           CONFIG_PACKAGE_libdb47=y
+          CONFIG_PACKAGE_libdbi=y
           CONFIG_PACKAGE_libelf=y
           CONFIG_PACKAGE_libev=y
           CONFIG_PACKAGE_libext2fs=y
@@ -1125,7 +1125,7 @@ jobs:
           CONFIG_PACKAGE_openssl-util=y
           CONFIG_PACKAGE_shellsync=y
           CONFIG_STRACE_NONE=y
-          
+
           EOF
           #
           # ===============================================================
